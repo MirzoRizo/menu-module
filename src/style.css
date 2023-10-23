@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  background: gray;
+}
+.logo {
+  cursor: pointer;
+}
+.btn {
+  padding: 7px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.buttons {
+  padding-left: 10;
+}
+.signUp {
+  color: blue;
+  border: 2px solid blue;
+  transform-origin: left;
+}
+.signIn {
+  background-color: blue;
+  color: white;
+  border: 2px solid blue;
+  margin-left: 10px;
+}
+
+.signIn:hover {
+  background-color: white;
+  color: blue;
+  transition: background-color 200ms ease-in-out;
+  border: 2px solid blue;
+}
+.signUp:hover {
+  background-color: blue;
+  color: white;
+  border: 2px solid blue;
+  transition: background-color 200ms ease-in-out;
+}
+
+.nav-bar-element {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: #fff;
+  padding: 0 20vw;
+}
+.menuContainer {
+  display: flex;
+  height: 60px;
+}
+.menu {
+  cursor: pointer;
+  margin: 20px 30px;
+}
+.menu:hover {
+  margin: 0;
+  padding: 20px 30px;
+}
+
+.menu:hover > .drop {
+  transform: translateY(200px);
+}
+
+.drop {
+  position: absolute;
+  left: 0;
+  top: -140px;
+  width: 100vw;
+  transition: transform 200ms ease-in-out;
+  z-index: -1;
+}
+
+.drop .drop-menu {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  cursor: auto;
+}
+.drop-menu li {
+  list-style: none;
+  font-weight: normal;
+  display: flex;
+}
+.drop-menu ul li:hover {
+  color: blue;
+  cursor: pointer;
+}
+.drop-menu ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 200px;
+  height: 170px;
+  margin: 20px;
+}
